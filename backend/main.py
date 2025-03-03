@@ -124,7 +124,7 @@ async def verify_face(
         is_match, similarity = compare_embeddings(stored_embedding, input_embedding, threshold=0.7)
         
         return {
-            "match": is_match,
+            "match": bool(is_match),
             "similarity": float(similarity),
             "distance": float(1.0 - similarity)
         }

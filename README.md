@@ -1,10 +1,10 @@
 # Face-Recognition-System
 
-<img src="assets/demo-app.png" alt="Database Schema" width="600">
+<img src="assets/demo-app.png" alt="Database Schema" width="800">
 
 ## 📌 Overview
 
-Face Recognition ini adalah Sistem pengenalan wajah untuk autentikasi dengan deteksi wajah real-time. Sistem ini menggunakan model deep learning untuk mendeteksi dan mencocokkan wajah berdasarkan fitur unik.
+face recognition system for authentication uses the FaceNet model based on InceptionResNetV1, which relies on the Convolutional Neural Network (CNN) algorithm to generate face embedding. The feature matching process is carried out with cosine similarity, so that the system can recognize faces based on the level of similarity of the resulting feature vectors.
 
 ## 🛠 Installation
 
@@ -20,7 +20,7 @@ cd face-recognition-system
 ```bash
 python -m venv venv
 venv\Scripts\activate      #for windows
-source venv/bin/activate   #for Linux/macos
+source venv/bin/activate   #for Linux/macOS
 ```
 
 ### 3. Install Dependencies
@@ -31,29 +31,31 @@ pip install -r requirements.txt
 
 ### 4. Set Up Database
 
-Pastikan PostgreSQL sudah di install dan berjalan dan sesuaikan konfigurasi database di `.env`. Selanjutnya tes koneksi database di `koneksi.py` untuk memastikan apakah sudah terhubung ke PostgreSQL.
+🔗 Unduh PostgreSQL: https://www.postgresql.org/download/
 
-### 5. Membuat Database
+Make sure PostgreSQL is installed and running and adjust the database configuration in `.env`. Next, test the database connection in `koneksi.py` to make sure it is connected to PostgreSQL
 
-- Buka terminal dan hubungkan ke PostgreSQL
+### 5. Create Database
+
+- Open a terminal and connect to PostgreSQL
 
 ```sql
 psql -U your_username_postgreSQL
 ```
 
-- Buat database:
+- Create database
 
 ```sql
 CREATE DATABASE facerecognitiondb;
 ```
 
-- Beralih ke database baru
+- move to the new database that has been created
 
 ```sql
 \c facerecognitiondb
 ```
 
-- Buat tabel users
+- Create tabel users
 
 ```sql
 CREATE TABLE users (
@@ -66,7 +68,7 @@ CREATE TABLE users (
 
 ### 6. Run the API
 
-Jalankan API menggunakan FastAPI dengan perintah berikut:
+run the API using FastAPI with terminal
 
 ```bash
 uvicorn backend.main:app --reload
@@ -74,7 +76,11 @@ uvicorn backend.main:app --reload
 
 ### 7. Run the Streamlit
 
+<<<<<<< HEAD
 jalankan dengan:
+=======
+run streamlit in terminal 2
+>>>>>>> 75ecc64 (initial commit)
 
 ```bash
 cd frontend
@@ -85,4 +91,4 @@ streamlit run app.py
 
 Swagger UI = http://localhost:8000/docs
 
-## Daftar endpoint bisa dilihat di folder including-API-endpoints
+## The list of endpoints can be seen in the including-API-endpoints folder.
