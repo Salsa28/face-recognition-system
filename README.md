@@ -76,16 +76,6 @@ uvicorn backend.main:app --reload
 
 ### 7. Run the Streamlit
 
-<<<<<<< HEAD
-run streamlit in terminal 2
-=======
-<<<<<<< HEAD
-jalankan dengan:
-=======
-run streamlit in terminal 2
->>>>>>> 75ecc64 (initial commit)
->>>>>>> feature-auth
-
 ```bash
 cd frontend
 streamlit run app.py
