@@ -7,11 +7,11 @@ __pycache__/
 *.pyo
 
 # Abaikan file lingkungan
-.env
+# .env
 
 # Abaikan file sementara
-*.jpg
-*.png
+# *.jpg
+# *.png
 *.log
 *.sqlite3
 
