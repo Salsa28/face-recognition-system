@@ -69,8 +69,7 @@ CREATE TABLE users (
 Jalankan API menggunakan FastAPI dengan perintah berikut:
 
 ```bash
-cd backend
-uvicorn main:app --host 0.0.0.0 --port 8000
+uvicorn backend.main:app --reload
 ```
 
 ### 7. Run the Streamlit
