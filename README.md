@@ -74,7 +74,7 @@ uvicorn backend.main:app --reload
 
 ### 7. Run the Streamlit
 
-Jika Anda memiliki antarmuka berbasis Streamlit, jalankan dengan:
+jalankan dengan:
 
 ```bash
 cd frontend
